@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta data-n-head="ssr" charset="utf-8">
+        <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+    </head>
+    <body>
+        <div id="test">
+
+        </div>
+        <button onclick="next()" style="width: 200px;height: 80px;">
+            下一题
+        </button>
+        <script>
+            let testList = [
+                '模块化',
+                '异步加载',
+                'CSS动画与js动画',
+                'XSS与CSRF',
+                '负载均衡',
+                'CDN机制',
+                '闭包',
+                '跨域',
+                '内存泄漏与回收',
+                '性能优化',
+                'get put post',
+                'webpack与gulp',
+                '深拷贝与浅拷贝',
+                'this场景',
+                'typeof 和instanceof',
+                '对象继承',
+                '异步逻辑',
+                'storage和cookie，前端缓存',
+                'document.ready与onload',
+                '多个域名的作用',
+                '清除浮动',
+                'BFC',
+                '创建对象过程',
+                'react原理，与vue区别',
+                '虚拟dom',
+                '前端路由',
+                'less与sass',
+                '重排重汇',
+                '双向数据绑定',
+                'vue父子通信方式',
+                'bundle拆分',
+                '服务端渲染',
+                '浏览器线程',
+                '设计模式',
+                '作用域链',
+                'react变化',
+                'vue变化',
+                '事件循环',
+                'promise原理',
+                'js作用域',
+                'css居中',
+                'vue生命周期',
+                'http协议，https',
+                '响应式实现',
+                'requireAnimationFrame',
+                '堆和栈',
+                'TCP与UDP',
+                'xhr状态码',
+                '目前在研究什么',
+                '项目中遇到什么问题，如何解决的',
+                '状态码',
+                'requestIdealforback',
+                '进程和线程',
+                'websocket与http',
+                '微前端',
+                'Set\Map\Symbol',
+                'RN原理',
+                'PWA',
+                'React Hooks'
+            ];
+            function next(){
+                const index = Math.floor(Math.random()*testList.length);
+                document.getElementById('test').innerText = testList.splice(index,1)[0];
+            }
+            next();
+        </script>
+   
+    </body>
+</html>
